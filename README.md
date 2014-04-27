@@ -5,9 +5,4 @@ Activity Recognition data set. The full description and the data can be found
 See `CodeBook.md` for details.
 
 
-  
-
-
-  
-
-
+ 
