@@ -10,6 +10,8 @@ download.data = function() {
     if (!file.exists("data")) {
         message("Creating data directory")
         dir.create("data")
+    }
+    if (!file.exists("data/UCI HAR Dataset")) {
         # download the data
         fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
         zipfile="data/UCI_HAR_data.zip"
