@@ -8,7 +8,7 @@ The script `run_analysis.R`
 - extracts only the measurements (features) on the mean and standard deviation
   for each measurement
 - appropriately labels the columns with descriptive names
-- creates a second, independent tiny dataset with an average of each variable
+- creates a second, independent tidy dataset with an average of each variable
   for each each activity and each subject. In other words, same type of
   measurements for a particular subject and activity are averaged into one value
   and the tidy data set contains these mean values only. The processed tidy data
@@ -16,8 +16,8 @@ The script `run_analysis.R`
   
 # run_analysis.R
 
-The script is parititioned into functions such that each one performs one of the
-steps described above. To run overall preprocessing call `clean.data`
+The script is parititioned into functions such that each function performs one of the
+steps described above. To run whole cleaning procedure, call `clean.data`
 function. The script also assumes that `plyr` library is already installed.
 
 # The original data set
@@ -34,9 +34,9 @@ If the data is not already available in the `data` directory, it is downloaded
 from UCI repository.
 
 The first step of the preprocessing is to merge the training and test
-sets. Training and test sets combined, there are 10299 instances where each
+sets. Two sets combined, there are 10,299 instances where each
 instance contains 561 features (560 measurements and subject identifier). After
-the merge operation the resulting data table contains 562 columns (560
+the merge operation the resulting data, the table contains 562 columns (560
 measurements, subject identifier and activity label).
 
 After the merge operation, mean and standard deviation features are extracted
